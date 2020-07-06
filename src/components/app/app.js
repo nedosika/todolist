@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Header from "../app-header";
-import SearchPanel from "../search-panel";
+import SarchPanel from "../SearchPanel";
 import ItemStatusFilter from "../item-status-filter";
 import Todolist from "../todo-list";
 import AddItemForm from "../add-form";
@@ -108,7 +108,7 @@ class App extends Component{
                 <span>{(new Date()).toString()}</span>
                 <Header todo={todoData.length - doneCount} done={doneCount}/>
                 <div className="top-panel d-flex">
-                    <SearchPanel
+                    <SarchPanel
                         onSearch={this.onSearchItem}
                         searchData={searchData}
                     />
