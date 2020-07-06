@@ -1,0 +1,4 @@
+.listGroup, .listGroupItem{
+    padding: .25rem .5rem;
+    list-style: none;
+}

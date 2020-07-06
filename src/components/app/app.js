@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import Header from "../app-header";
-import SarchPanel from "../SearchPanel";
+import SearchPanel from "../SearchPanel";
 import ItemStatusFilter from "../item-status-filter";
-import Todolist from "../todo-list";
+import TodoList from "../TodoList";
 import AddItemForm from "../add-form";
 
 import './app.css';
@@ -108,7 +108,7 @@ class App extends Component{
                 <span>{(new Date()).toString()}</span>
                 <Header todo={todoData.length - doneCount} done={doneCount}/>
                 <div className="top-panel d-flex">
-                    <SarchPanel
+                    <SearchPanel
                         onSearch={this.onSearchItem}
                         searchData={searchData}
                     />
@@ -117,7 +117,7 @@ class App extends Component{
                         currentFilter={this.state.filter}
                     />
                 </div>
-                <Todolist
+                <TodoList
                     todoData={renderData}
                     onDelete={this.removeItem}
                     onToggleImportant={this.toggleImportant}

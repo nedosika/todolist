@@ -1,14 +1,14 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './searchPanel.css';
 
-const SarchPanel  = ({onSearch, searchData}) => {
+const SearchPanel  = ({onSearch, searchData}) => {
     const onChangeHandler = (event)=>{
         onSearch(event.target.value)
     }
 
     return(
         <input
-            className="search-input form-control"
+            className="searchInput form-control"
             placeholder={"Type here to search"}
             onChange={onChangeHandler}
             value={searchData}
@@ -16,4 +16,4 @@ const SarchPanel  = ({onSearch, searchData}) => {
     );
 }
 
-export default SarchPanel;
+export default SearchPanel;

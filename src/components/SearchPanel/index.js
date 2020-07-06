@@ -1,3 +1,3 @@
-import SarchPanel from "./SarchPanel";
+import SearchPanel from "./SearchPanel";
 
-export default SarchPanel;
+export default SearchPanel;
