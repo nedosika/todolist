@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Header from "../Header";
 import SearchPanel from "../SearchPanel";
-import ItemStatusFilter from "../item-status-filter";
+import ItemStatusFilter from "../ItemStatusFilter";
 import TodoList from "../TodoList";
 import AddItemForm from "../add-form";
 
