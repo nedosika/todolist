@@ -3,7 +3,7 @@ import Header from "../Header";
 import SearchPanel from "../SearchPanel";
 import ItemStatusFilter from "../ItemStatusFilter";
 import TodoList from "../TodoList";
-import AddItemForm from "../add-form";
+import AddItemForm from "../AddForm";
 
 import './app.css';
 
