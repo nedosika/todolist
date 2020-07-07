@@ -1,4 +1,5 @@
 import React from 'react';
+import Timer from '../Timer';
 import Header from "../Header";
 import SearchPanel from "../SearchPanel";
 import ItemStatusFilter from "../ItemStatusFilter";
@@ -68,7 +69,7 @@ const App = () => {
 
     return(
         <div className="app">
-            <span>{(new Date()).toString()}</span>
+            <Timer/>
             <Header todo={todoData.length - doneCount} done={doneCount}/>
             <div className="top-panel d-flex">
                 <SearchPanel
